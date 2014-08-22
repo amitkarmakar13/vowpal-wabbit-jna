@@ -14,7 +14,9 @@ Generate shared library file using,
 
 <pre>g++ libvw_simple_jna.cc -o libvw_simple_jna.so --shared -fPIC</pre>
 
-Set jna library path before using the connector,
+Set jna library path before using the connector. 
+
+Make sure libvw_simple_jna.so and libvw.so are available on jna library path.
 
 <pre>
 System.setProperty("jna.library.path", [ colon separated directory list containing all native shared libraries ]);
